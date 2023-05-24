@@ -4,7 +4,7 @@
 [I. Description](#description)  
 [II. Prerequisites](#prerequisites)
 [III. Usage](#usage)
-[IV. File Structure](#file structure)
+[IV. File Structure](#file-structure)
 [V. Contributing](#contributing)
 
 ## Description
