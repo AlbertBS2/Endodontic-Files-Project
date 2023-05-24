@@ -1,5 +1,12 @@
 # Endodontic Files Project
 
+## Table of Contents
+[I. Description](#description)  
+[II. Prerequisites](#prerequisites)
+[III. Usage](#usage)
+[IV. File Structure](#file structure)
+[V. Contributing](#contributing)
+
 ## Description
 This Python project processes multiple .xlsx result files to generate a graph combining all the results. It also provides tables with mean and standard deviation calculations. The 'launcher.py' file serves as the main entry point for the analysis.
 
