@@ -1,6 +1,6 @@
-# Introduce the name of the title do you want your graph to has as 'graph_title'
+# Enter the desired title for the graph as 'graph_title'
 title = 
-# Introduce the name of your 3 results Excel files as 'name_of_file.xlsx'
+# Enter the names of the 20 Excel files you want to consider in the analysis as 'data/name_of_file.xlsx'
 filename0 = 
 filename1 = 
 filename2 = 
