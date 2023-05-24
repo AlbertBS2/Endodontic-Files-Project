@@ -1,4 +1,4 @@
-# The influence of the heat treatment on the endodontic files
+# Heat Treatment's Influence on Endodontic Files
 
 ## Table of Contents
 [I. Description](#description)  
