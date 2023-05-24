@@ -1,4 +1,4 @@
-# Endodontic Files Project
+# The influence of the heat treatment on the endodontic files
 
 ## Table of Contents
 [I. Description](#description)  
