@@ -1,0 +1,9 @@
+# ignore data and results folders
+data/
+results/
+
+# ignore pycache
+__pycache__/
+
+# ignore .gitattributes file
+.gitattributes
