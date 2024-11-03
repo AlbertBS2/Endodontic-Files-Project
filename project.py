@@ -3,7 +3,29 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
 
 def create_df(filename0, filename1, filename2):
+    """
+    Creates a DataFrame containing cycle statistics for three endodontic files.
+    
+    Parameters:
+        filename0 (str): Path to first Excel file containing force measurements
+        filename1 (str): Path to second Excel file containing force measurements 
+        filename2 (str): Path to third Excel file containing force measurements
+        
+    Returns:
+        pd.DataFrame: Combined DataFrame containing cycle statistics for all three files
+    """
+
     def process_single_file(filename):
+        """
+        Process a single Excel file containing force measurements and extract cycle statistics.
+        
+        Parameters:
+            filename (str): Path to Excel file containing force measurements
+            
+        Returns:
+            pd.DataFrame: DataFrame containing cycle statistics including min/max penetration
+                         and removal forces for each cycle
+        """
         # Read and preprocess data
         df = pd.read_excel(filename, sheet_name=1)
         df = df.drop([0, 1])
@@ -91,6 +113,23 @@ def create_df(filename0, filename1, filename2):
     return [df_mean2, df_std, df_selected1, df_selected2]
 
 def graph(title, *filenames):
+    """
+    Creates a bar plot comparing force measurements across multiple endodontic files.
+    
+    Parameters:
+        title (str): Title for the graph
+        *filenames (str): Variable number of filenames (must be 21 total, in groups of 3)
+                         Each group of 3 files contains force measurements for one type of file
+                         
+    The graph shows:
+    - Maximum penetration and removal forces for each cycle
+    - Error bars indicating standard deviation
+    - Different colors for each file type
+    - Legend identifying each file type
+    
+    The graph is displayed and saved as a PNG file in the results directory.
+    """
+
     if len(filenames) != 21:
         raise ValueError("Expected 21 filenames (7 groups of 3 files)")
         
@@ -148,6 +187,22 @@ def graph(title, *filenames):
     plt.close()
 
 def mean(filename0, filename1, filename2):
+    """
+    Creates a table showing mean force measurements for three endodontic files.
+    
+    Parameters:
+        filename0 (str): Path to first Excel file containing force measurements
+        filename1 (str): Path to second Excel file containing force measurements
+        filename2 (str): Path to third Excel file containing force measurements
+        
+    The table shows:
+    - Mean maximum penetration and removal forces for each cycle
+    - Values rounded to 2 decimal places
+    - Results displayed in a formatted table
+    
+    The table is displayed and saved as a PNG file in the results directory.
+    """
+
     df_mean2 = create_df(filename0, filename1, filename2)[0]
 
     df_mean_rounded = df_mean2.round(2)
@@ -165,6 +220,22 @@ def mean(filename0, filename1, filename2):
     plt.close()
 
 def std(filename0, filename1, filename2):
+    """
+    Creates a table showing standard deviation of force measurements for three endodontic files.
+    
+    Parameters:
+        filename0 (str): Path to first Excel file containing force measurements
+        filename1 (str): Path to second Excel file containing force measurements
+        filename2 (str): Path to third Excel file containing force measurements
+        
+    The table shows:
+    - Standard deviation of maximum penetration and removal forces for each cycle
+    - Values rounded to 2 decimal places 
+    - Results displayed in a formatted table
+    
+    The table is displayed and saved as a PNG file in the results directory.
+    """
+
     df_std = create_df(filename0, filename1, filename2)[1]
 
     plt.axis('off')
