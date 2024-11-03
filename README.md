@@ -8,7 +8,7 @@
 [V. File Structure](#file-structure)   
 
 ## Description
-This Python project processes multiple .xlsx files (containing results from tests performed on edodontic files) to generate a graph combining all the results. It also provides tables with mean and standard deviation calculations.
+This Python project processes multiple .xlsx files (containing results from tests performed on endodontic files) to generate a graph combining all the results. It also provides tables with mean and standard deviation calculations.
 
 ## Prerequisites
 Make sure you have the following installed:
