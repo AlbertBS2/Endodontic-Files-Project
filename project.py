@@ -6,7 +6,7 @@ def create_df(filename0, filename1, filename2):
     """
     Creates a DataFrame containing cycle statistics for three endodontic files.
     
-    Parameters:
+    Args:
         filename0 (str): Path to first Excel file containing force measurements
         filename1 (str): Path to second Excel file containing force measurements 
         filename2 (str): Path to third Excel file containing force measurements
@@ -19,7 +19,7 @@ def create_df(filename0, filename1, filename2):
         """
         Process a single Excel file containing force measurements and extract cycle statistics.
         
-        Parameters:
+        Args:
             filename (str): Path to Excel file containing force measurements
             
         Returns:
@@ -116,7 +116,7 @@ def graph(title, *filenames):
     """
     Creates a bar plot comparing force measurements across multiple endodontic files.
     
-    Parameters:
+    Args:
         title (str): Title for the graph
         *filenames (str): Variable number of filenames (must be 21 total, in groups of 3)
                          Each group of 3 files contains force measurements for one type of file
@@ -190,7 +190,7 @@ def mean(filename0, filename1, filename2):
     """
     Creates a table showing mean force measurements for three endodontic files.
     
-    Parameters:
+    Args:
         filename0 (str): Path to first Excel file containing force measurements
         filename1 (str): Path to second Excel file containing force measurements
         filename2 (str): Path to third Excel file containing force measurements
@@ -223,7 +223,7 @@ def std(filename0, filename1, filename2):
     """
     Creates a table showing standard deviation of force measurements for three endodontic files.
     
-    Parameters:
+    Args:
         filename0 (str): Path to first Excel file containing force measurements
         filename1 (str): Path to second Excel file containing force measurements
         filename2 (str): Path to third Excel file containing force measurements

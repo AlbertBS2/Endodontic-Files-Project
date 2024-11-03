@@ -1,51 +1,59 @@
-# Enter the desired title for the graph as 'graph_title'
-title = 
-# Enter the names of the 20 Excel files you want to consider in the analysis as 'data/name_of_file.xlsx'
-filename0 = 
-filename1 = 
-filename2 = 
+# Enter the title for the graph
+title = "Graph Title"
 
-filename3 = 
-filename4 = 
-filename5 = 
+# File paths for each group of measurements
+# Enter paths as 'data/filename.xlsx' for each file
+group1_files = [
+    "data/file1.xlsx",
+    "data/file2.xlsx", 
+    "data/file3.xlsx"
+]
 
-filename6 = 
-filename7 = 
-filename8 = 
+group2_files = [
+    "data/file4.xlsx",
+    "data/file5.xlsx",
+    "data/file6.xlsx"
+]
 
-filename9 = 
-filename10 = 
-filename11 = 
+group3_files = [
+    "data/file7.xlsx", 
+    "data/file8.xlsx",
+    "data/file9.xlsx"
+]
 
-filename12 = 
-filename13 = 
-filename14 = 
+group4_files = [
+    "data/file10.xlsx",
+    "data/file11.xlsx",
+    "data/file12.xlsx"
+]
 
-filename15 = 
-filename16 = 
-filename17 = 
+group5_files = [
+    "data/file13.xlsx",
+    "data/file14.xlsx", 
+    "data/file15.xlsx"
+]
 
-filename18 = 
-filename19 = 
-filename20 = 
+group6_files = [
+    "data/file16.xlsx",
+    "data/file17.xlsx",
+    "data/file18.xlsx"
+]
 
+group7_files = [
+    "data/file19.xlsx",
+    "data/file20.xlsx",
+    "data/file21.xlsx"
+]
 
+# Combine all files in order
+all_files = (
+    group1_files + group2_files + group3_files + group4_files +
+    group5_files + group6_files + group7_files
+)
 
-
-
-
-# Ignore
+# Import and run analysis
 import project
 
-project.graph(title,
-              filename0, filename1, filename2,
-              filename3, filename4, filename5,
-              filename6, filename7, filename8,
-              filename9, filename10, filename11,
-              filename12, filename13, filename14,
-              filename15, filename16, filename17,
-              filename18, filename19, filename20)
-
-project.mean(filename0, filename1, filename2)
-
-project.std(filename0, filename1, filename2)
+project.graph(title, *all_files)
+project.mean(*group1_files)
+project.std(*group1_files)

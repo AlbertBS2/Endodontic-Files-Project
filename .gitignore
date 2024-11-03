@@ -4,6 +4,3 @@ results/
 
 # ignore pycache
 __pycache__/
-
-# ignore .gitattributes file
-.gitattributes
