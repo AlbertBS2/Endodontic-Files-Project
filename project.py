@@ -124,8 +124,6 @@ def graph(title, *filenames):
     The graph shows:
     - Maximum penetration and removal forces for each cycle
     - Error bars indicating standard deviation
-    - Different colors for each file type
-    - Legend identifying each file type
     
     The graph is displayed and saved as a PNG file in the results directory.
     """
@@ -197,8 +195,6 @@ def mean(filename0, filename1, filename2):
         
     The table shows:
     - Mean maximum penetration and removal forces for each cycle
-    - Values rounded to 2 decimal places
-    - Results displayed in a formatted table
     
     The table is displayed and saved as a PNG file in the results directory.
     """
@@ -230,8 +226,6 @@ def std(filename0, filename1, filename2):
         
     The table shows:
     - Standard deviation of maximum penetration and removal forces for each cycle
-    - Values rounded to 2 decimal places 
-    - Results displayed in a formatted table
     
     The table is displayed and saved as a PNG file in the results directory.
     """
