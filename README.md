@@ -2,19 +2,12 @@
 
 ## Table of Contents
 [I. Description](#description)  
-[II. Prerequisites](#prerequisites)    
-[III. Installation](#installation)    
-[IV. Usage](#usage)    
-[V. File Structure](#file-structure)   
+[II. Installation](#installation)    
+[III. Usage](#usage)    
+[IV. File Structure](#file-structure)   
 
 ## Description
 This Python project processes multiple .xlsx files (containing results from tests performed on endodontic files) to generate a graph combining all the results. It also provides tables with mean and standard deviation calculations.
-
-## Prerequisites
-Make sure you have the following installed:
-
-- Python 3.x
-- Required Python libraries: `requests`, `matplotlib`
 
 ## Installation
 1. Clone the repository:
@@ -33,7 +26,7 @@ Make sure you have the following installed:
 1. Open the launcher.py file.
 2. Modify the following variables:
     - *title*: Enter the desired title for the graph.
-    - *filenames*: Enter the names of the 20 Excel files (in groups of 3) you want to consider in the analysis.
+    - *filenames*: Enter the names of the 21 Excel files (in groups of 3) you want to consider in the analysis.
 4. Save the changes to launcher.py.
 5. Run the launcher.py file.
 
